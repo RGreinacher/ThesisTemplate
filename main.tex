@@ -77,6 +77,13 @@
 %\input{abstract}
 %\end{abstract}
 \begin{spacing}{1.5}
+
+% Declaration of Originality
+\newpage
+\thispagestyle{empty}
+\section*{Declaration of Originality}
+\input{rest/declaration}
+
 % Table of Contents
 \newpage
 \pagenumbering{roman}
@@ -99,90 +106,86 @@
 
 
 
-
 % Introduction
 \newpage
 \pagenumbering{arabic}
 \setcounter{page}{1}
-\section{Explanation of the Overleaf project structure}  %2
-\input{1_intro/0_explanation}
-\bigskip
+\section{Introduction}
+\input{1_intro/1.0_intro}
+
+\subsection{Related Work}
+\input{1_intro/1.2_rel_work}
+\input{1_intro/1.2.1_rel_work_subsection}
+\input{1_intro/1.2.2_rel_work_subsection}
+
+\subsection{Objective and Research Questions}
+\input{1_intro/1.3_research_questions}
 
 
+
+% Method
 \newpage
-\pagenumbering{arabic}
-\setcounter{page}{1}
-\section{Introduction}  %2
-\input{1_intro/intro}
-\bigskip
+\section{Methodology}
+\input{2_methodology/2.0_intro}
 
+\subsection{Participants}
+\input{2_methodology/2.1_participants}
 
-\newpage
-\section{Literature Review on....- change title in main file} %3
-\input{2_literature_rev/2.0_intro.tex}
-\subsection{First subsection....- change title in main file}
-\input{2_literature_rev/2.1_subsection.tex}
-\subsection{Second Subsection...- change title in main file}
-\input{2_literature_rev/2.2_subsection.tex}
-%conclusion does not require own subtitle 
-\input{2_literature_rev/2.3_conclusion.tex}
-\newpage
-\end{spacing}
-\begin{spacing}{1}
-%\input{long_table_example.tex} % This is the example table of the literature review
-\end{spacing}
-%\clearpage
-%\newpage
+\subsection{Materials and Instruments}
+\input{2_methodology/2.2_material}
 
+\subsection{Procedure}
+\input{2_methodology/2.3_procedure}
 
-\begin{spacing}{1.5}
-%\newgeometry{width=150mm,top=35mm,bottom=25mm, bindingoffset=6mm}
-\section{Methodology - change title in main file} 
-\input{3_methodology/3.0_intro.tex}
-%with the \input{3_methodology/file_name.tex} command you can add files from the subsections under the subsection title 
-\subsection{First Subsection - change title in main file}  
-\input{3_methodology/3.1_first_subsection.tex}
-\subsection{Second Subsection - change title in main file} 
-\input{3_methodology/3.2_second_subsection.tex}
-\subsection{Third Subsection - change title in main file} 
-\input{3_methodology/3.3_third_subsection.tex}
-%The conclusion does not require a subsection header as this is only a short summary of the chapter and introduction of what comes next
-\input{3_methodology/3.4_conclusion.tex}
+\subsection{Study Design}
+\input{2_methodology/2.4_design}
 
+\subsection{Data Analysis}
+\input{2_methodology/2.5_analyses}
 \bigskip
 
 
 
-\section{Results/Analysis - change title in main file}
-\input{4_Results/4.0_intro}
-\subsection{First Subsection Tile - change title in main file}
-\input{4_Results/4.1_first_subsection.tex}
-\subsection{Second Subsection Title - change title in main file}
-\input{4_Results/4.2_second_subsection.tex}
-\subsection{Third Subsection Tile - change title in main file}
-\input{4_Results/4.3_third_subsection.tex}
-%does not require own title
-\input{4_Results/4.4_conclusion}
+% Results
 \newpage
+\section{Results}
+\input{3_Results/3.0_intro}
+
+\subsection{First Subsection Tile}
+\input{3_Results/3.1_first_subsection.tex}
+
+\subsection{Second Subsection Title}
+\input{3_Results/3.2_second_subsection.tex}
+
+\subsection{Third Subsection Tile}
+\input{3_Results/3.3_third_subsection.tex}
 \bigskip
 
+
+
+% Discussion
+\newpage
 \section{Discussion}
-\input{5_Discussion/5.0_intro.tex}
-\subsection{First Subsection Title - change title in main file}
-\input{5_Discussion/5.1_first_subsection.tex}
-\subsection{Second Subsection Title - change title in main file}
-\input{5_Discussion/5.2_subsection.tex}
-%does not require separate title
-\input{5_Discussion/5.3_conclusion.tex}
+\input{4_Discussion/4.0_intro.tex}
+
+\subsection{Discussion of Results}
+\input{4_Discussion/4.1_disussion_of_results.tex}
+
+\subsection{Limitations}
+\input{4_Discussion/4.2_limitations.tex}
+
+\subsection{Future Work}
+\input{4_Discussion/4.3_future_work.tex}
+
+\subsection{Conclusion}
+\input{4_Discussion/4.4_conclusion.tex}
+
+
+
+% Examples for your thesis, not part of your the thesis document
 \newpage
-
-
-\section{Conclusion - change title in main file}
-\input{6_Conclusion/6.0_intro.tex}
-\input{6_Conclusion/6.1_main_results.tex}
-\input{6_Conclusion/6.2_outlook.tex}
 \section{Examples of Graphs, Tables, Equations, Code, and References - can be deleted afterwards}
-\input{7_Example/examples.tex}
+\input{Example/examples.tex}
 
 
 % Bibliography
@@ -191,11 +194,6 @@
 \bibliographystyle{references/kbib}
 \bibliography{references/ref}
 
-% Declaration of Originality
-\newpage
-\thispagestyle{empty}
-\section*{Declaration of Originality:}
-\input{rest/declaration}
 
 \end{spacing}
 \end{document}
