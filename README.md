@@ -2,6 +2,7 @@
 
 This thesis template provides one possible structure on how to create a thesis at the Quality and Usability Lab.
 Additionally, the documents includes useful information on how to structure, write, do references, etc.
+Preview the document with [ThesisTemplate.pdf](https://github.com/RGreinacher/ThesisTemplate/blob/main/ThesisTemplate.pdf).
 
 This repo is a fork from the original work by [Vera Schmitt](https://github.com/veraschmitt/Thesis_Template). This repo is different in that it promotes a four-chapter structure (Intro / Methods / Results / Discussion).
 
